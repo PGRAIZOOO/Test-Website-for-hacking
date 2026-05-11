@@ -1,0 +1,146 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enrollment Form - Huckleberry Montessori</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+    </head>
+    <body class="enrollment-bg">
+
+        <nav class="top-panel">
+            <div class="btn-row">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About Us</a>
+                <a href="{{ url_for('programs') }}">Programs</a>
+                <a href="{{ url_for('facilities') }}">Facilities</a>
+                <a href="{{ url_for('services') }}">Student Services</a>
+                <a href="{{ url_for('resources') }}">Resources</a>
+                <a href="{{ url_for('enrollment') }}">Enrollment</a>
+                <a href="{{ url_for('store') }}">Store</a>
+                <a href="{{ url_for('library') }}">Library</a>
+            </div>
+        </nav>
+
+        <div class="enrollment-container">
+            <div class="form-header">
+                <h1>STUDENT'S ENROLLMENT FORM</h1>
+            </div>
+
+            <div class="form-content">
+                <div class="form-grid">
+                    <div class="column">
+                        <h2 class="section-title">Student Information</h2>
+                        <div class="name-row">
+                            <div class="input-box">
+                                <input type="text" id="surname">
+                                <label>Surname</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="firstname">
+                                <label>Firstname</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="middlename">
+                                <label>Middlename</label>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="input-box">
+                                <label class="green-label">Birthday:</label>
+                                <input type="date" id="bday">
+                            </div>
+                            <div class="input-box gender-box">
+                                <label class="green-label">Gender:</label>
+                                <label><input type="radio" name="gender" value="Male"> Male</label>
+                                <label><input type="radio" name="gender" value="Female"> Female</label>
+                            </div>
+                        </div>
+
+                        <div class="full-row">
+                            <label class="green-label">Student's Address:</label>
+                            <input type="text" id="address">
+                        </div>
+
+                        <div class="info-row">
+                            <div class="input-box">
+                                <label class="green-label">Contact Number:</label>
+                                <input type="text" id="s_contact">
+                            </div>
+                            <div class="input-box">
+                                <label class="green-label">Email:</label>
+                                <input type="email" id="s_email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="section-title">Parent/Guardian's Information</h3>
+                        <div class="name-row">
+                            <div class="input-box">
+                                <input type="text" id="p_surname">
+                                <label>Surname</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="p_firstname">
+                                <label>Firstname</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="p_middlename">
+                                <label>Middlename</label>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="input-box">
+                                <label class="green-label">Contact Number:</label>
+                                <input type="text" id="p_contact">
+                            </div>
+                            <div class="input-box">
+                                <label class="green-label">Email:</label>
+                                <input type="email" id="p_email">
+                            </div>
+                        </div>
+
+                        <div class="full-row date-enroll">
+                            <label class="green-label">Date of Enrollment:</label>
+                            <input type="date" id="enroll_date">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Huckleberry Montessori</h3>
+                    <p>Nurturing curiosity and independence through the Montessori method. Empowering students to become lifelong learners.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('programs') }}">Programs</a></li>
+                        <li><a href="{{ url_for('enrollment') }}">Enrollment</a></li>
+                        <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 Taguig City, Philippines</p>
+                    <p>📞 (02) 8123-4567</p>
+                    <p>📧 info@huckleberry.edu.ph</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Huckleberry Montessori School. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Huckleberry Montessori School</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+</head>
+<body>
+
+    
+    <nav class="top-panel">
+        <div class="btn-row">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>
+
+    <section class="hero-home">
+        <div class="hero-content">
+            <h1>We build strong foundations for <br><span>lifelong learning</span></h1>
+            <p>Providing quality Montessori education in Taguig City since 1999.</p>
+            <div class="hero-btns">
+                <a href="{{ url_for('enrollment') }}" class="cta-main">Enroll Now</a>
+                <a href="{{ url_for('about') }}" class="cta-sub">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vm-card">
+                <h2>Our Vision</h2>
+                <p>To be a premier Montessori institution that nurtures independent, compassionate, and globally-competitive lifelong learners.</p>
+            </div>
+            <div class="vm-card">
+                <h2>Our Mission</h2>
+                <p>To provide a prepared environment that respects the child's natural development and fosters a love for self-directed discovery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="section-header">
+            <h1>Academic Pathways</h1>
+            <p>Explore our sequential curriculum designed for every stage of your child's growth.</p>
+        </div>
+
+        <div class="class-row">
+            <div class="class-col">
+                <div class="level-icon">🧸</div>
+                <h2>Kindergarten</h2>
+                <p>Focusing on the "Absorbent Mind" (Ages 3-6). We prioritize practical life skills, sensorial exploration, and foundational literacy.</p>
+                <a href="{{ url_for('programs') }}" class="read-more">View Details →</a>
+            </div>
+            <div class="class-col">
+                <div class="level-icon">📚</div>
+                <h2>Elementary</h2>
+                <p>Developing abstract thinking and social harmony. Students engage in deep research across science, history, and geography.</p>
+                <a href="{{ url_for('programs') }}" class="read-more">View Details →</a>
+            </div>
+            <div class="class-col">
+                <div class="level-icon">🔬</div>
+                <h2>Junior High</h2>
+                <p>Transitioning into academic mastery and leadership. Preparing students for the rigors of specialized senior high tracks.</p>
+                <a href="{{ url_for('programs') }}" class="read-more">View Details →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-cta">
+        <h2>Join the Huckleberry Family</h2>
+        <p>Admissions for SY 2026-2027 are now open. Secure your child's future today.</p>
+        <a href="{{ url_for('enrollment') }}" class="cta-white">Start Application</a>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Huckleberry Montessori</h3>
+                <p>Nurturing curiosity and independence through the Montessori method. Empowering students to become lifelong learners.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('programs') }}">Programs</a></li>
+                    <li><a href="{{ url_for('enrollment') }}">Enrollment</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 Taguig City, Philippines</p>
+                <p>📞 (02) 8123-4567</p>
+                <p>📧 info@huckleberry.edu.ph</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Huckleberry Montessori School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

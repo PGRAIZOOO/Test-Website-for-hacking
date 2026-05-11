@@ -1,0 +1,158 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enrollment Form - Huckleberry Montessori</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+    </head>
+
+<body>
+    <nav class="top-panel">
+        <div class="btn-row">
+           <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>   
+
+    <div class="header">
+        <h1>School Facilities</h1>
+        <p>Our campus provides modern learning environments and equipment.</p>
+    </div>
+
+    <div class="page-section">
+        <h2>Primary Learning Spaces</h2>
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/Comp_Lab.jpg" alt="Computer Lab"></div>
+                <div class="card-text-content">
+                    <h3>Computer Laboratory</h3>
+                    <p>Equipped with modern computers for programming and digital learning.</p>
+                </div>
+            </div>
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/Sci_LAb.jpg" alt="Science Lab"></div>
+                <div class="card-text-content">
+                    <h3>Science Laboratory</h3>
+                    <p>Supports experiments and scientific exploration for students.</p>
+                </div>
+            </div>
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/Library.jpg" alt="Library"></div>
+                <div class="card-text-content">
+                    <h3>Library</h3>
+                    <p>A quiet space with books, research materials, and study areas.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Recreation & Wellness</h2>
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/gymnasium.jpg" alt="Gym"></div>
+                <div class="card-text-content">
+                    <h3>Gymnasium</h3>
+                    <p>Indoor sports area for physical education and school activities.</p>
+                </div>
+            </div>
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/playground.jpg" alt="Playground"></div>
+                <div class="card-text-content">
+                    <h3>Playground</h3>
+                    <p>Outdoor space for recreation and sports.</p>
+                </div>
+            </div>
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/clinic.jpg" alt="Clinic"></div>
+                <div class="card-text-content">
+                    <h3>Clinic</h3>
+                    <p>Provides basic medical care and assistance for students.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Specialized Tools</h2>
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/microscopes.jpg" alt="Microscopes"></div>
+                <div class="card-text-content">
+                    <h3>Advanced Microscopes</h3>
+                    <p>Used in science classes to observe microorganisms and samples.</p>
+                </div>
+            </div>
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/Lap_equip.jpg" alt="Lab Equipment"></div>
+                <div class="card-text-content">
+                    <h3>Laboratory Equipment</h3>
+                    <p>Includes beakers, test tubes, and experiment tools.</p>
+                </div>
+            </div>
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/projector.jpg" alt="Projectors"></div>
+                <div class="card-text-content">
+                    <h3>Interactive Projectors</h3>
+                    <p>Used for digital presentations and interactive lessons.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-block">
+            <h2>Our Learning Environment</h2>
+            <p>At Huckleberry Montessori, we believe the "environment is the third teacher." Our facilities are designed to be open, accessible, and filled with natural light to stimulate curiosity and independent learning.</p>
+        </div>
+
+        <h2>Social Spaces & Development</h2>
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="/static/assets/comphub.jpg" alt="IT Hub"></div>
+                <div class="card-text-content">
+                    <h3>Computer Hub</h3>
+                    <p>A high-tech space where logic meets creativity. We teach creation, not just typing.</p>
+                    <ul class="card-features">
+                        <li>30+ High-speed Workstations</li>
+                        <li>Fiber-optic Connectivity</li>
+                        <li>Dedicated Robotics Zone</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/Muliti_media_library.jpg" alt="Media Library"></div>
+                <div class="card-text-content">
+                    <h3>Multi-Media Library</h3>
+                    <p>Housing over 5,000 physical titles and a vast digital archive.</p>
+                    <ul class="card-features">
+                        <li>Collaborative Study Rooms</li>
+                        <li>Digital E-book Lending</li>
+                        <li>Storytelling Corner</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-card">
+                <div class="card-image-wrapper"><img src="static/assets/art_atelier.png" alt="Art Atelier"></div>
+                <div class="card-text-content">
+                    <h3>Creative Arts Atelier</h3>
+                    <p>A specialized studio for visual and performing arts expression.</p>
+                    <ul class="card-features">
+                        <li>Pottery & Sculpture Tools</li>
+                        <li>Professional Easels</li>
+                        <li>Musical Instrument Gallery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enrollment Form - Huckleberry Montessori</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+    </head>
+<body>
+    <nav class="top-panel">
+        <div class="btn-row">
+           <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Educational Programs & Curriculum</h1>
+        <p>A sequential journey from sensory-based discovery to advanced academic inquiry.</p>
+    </div>
+
+    <main class="page-section">
+        <div class="level-header kinder-theme">
+            <span class="badge">Level 01</span>
+            <h2>The Montessori Kindergarten (Ages 3-6)</h2>
+            <p class="section-subtitle">Nurturing the "Absorbent Mind" through the Prepared Environment.</p>
+        </div>
+
+        <div class="journey-row">
+            <div class="journey-text">
+                <h3>Foundational Pillars</h3>
+                <p>Our Kindergarten program follows the authentic Montessori method, where children are grouped in multi-age settings to foster peer-to-peer learning and social harmony.</p>
+                <div class="module-grid">
+                    <div class="module">
+                        <strong>Practical Life</strong>
+                        <p>Activities like pouring, lacing, and grace/courtesy that build concentration and fine motor control.</p>
+                    </div>
+                    <div class="module">
+                        <strong>Sensorial</strong>
+                        <p>Refining the senses through the Pink Tower, Brown Stairs, and Color Tablets to understand dimension and order.</p>
+                    </div>
+                    <div class="module">
+                        <strong>Mathematics</strong>
+                        <p>Introduction to the Decimal System using Golden Beads, Number Rods, and the Spindle Box.</p>
+                    </div>
+                    <div class="module">
+                        <strong>Language Arts</strong>
+                        <p>Phonetic awareness via Sandpaper Letters and the Moveable Alphabet to jumpstart early reading.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="journey-image">
+                <img src="/static/assets/kinderroom.png" alt="Kindergarten Classroom">
+            </div>
+        </div>
+
+        <div class="level-header jhs-theme">
+            <span class="badge">Level 02</span>
+            <h2>Junior High School (Grades 7-10)</h2>
+            <p class="section-subtitle">Fostering independence, critical thinking, and civic responsibility.</p>
+        </div>
+
+        <div class="journey-row reverse">
+            <div class="journey-text">
+                <h3>Advanced Academic Specialization</h3>
+                <p>As students transition into young adulthood, our JHS curriculum bridges the gap between creative freedom and the rigorous standards required for Senior High and College entry.</p>
+                <ul class="heavy-list">
+                    <li><strong>STEM Integration:</strong> Hands-on Science labs focusing on Biology and Physics, paired with Robotics workshops.</li>
+                    <li><strong>The Trust Protocol:</strong> A signature seminar series introducing Blockchain basics and Digital Ethics.</li>
+                    <li><strong>Communication & Humanities:</strong> Deep dives into World Literature, Philosophy, and Public Speaking modules.</li>
+                    <li><strong>Livelihood & Tech:</strong> Practical skills in UI/UX design, introductory coding (Lua/Python), and financial literacy.</li>
+                </ul>
+                <div class="extra-info-box">
+                    <h4>Elective Clubs</h4>
+                    <p>Students can join the Robotics Guild, Vocal Ensemble, or the Student Council for leadership development.</p>
+                </div>
+            </div>
+            <div class="journey-image">
+                <img src="/static/assets/jumiiorlab.jpg" alt="Junior High Lab Session">
+            </div>
+        </div>
+
+        <section class="pillar-section">
+            <div class="section-header center">
+                <h2>Our Pedagogical Pillars</h2>
+            </div>
+            <div class="pillar-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">🌱</div>
+                    <h3>Independence</h3>
+                    <p>Students choose their work, fostering internal motivation and a lifelong love for learning.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>Respect for self, others, and the environment is at the core of every classroom interaction.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🧠</div>
+                    <h3>Inquiry</h3>
+                    <p>Moving beyond rote memorization to understand the "why" behind every scientific and social concept.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Huckleberry Montessori</h3>
+                <p>Building strong foundations for lifelong learning.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>📍 Taguig City, Philippines</p>
+                <p>📞 (02) 8123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Huckleberry Montessori School, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

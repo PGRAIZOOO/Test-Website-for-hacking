@@ -1,0 +1,146 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enrollment Form - Huckleberry Montessori</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+    </head>
+<body>
+    <nav class="top-panel">
+        <div class="btn-row">
+              <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Resource Center</h1>
+        <p>Your comprehensive portal for admissions, financials, and school documentation.</p>
+    </div>
+
+    <div class="page-section resource-container">
+        <aside class="resource-sidebar">
+            <div class="sidebar-block urgent">
+                <h3>🔔 Announcements</h3>
+                <p><strong>SY 2026-2027:</strong> Early bird enrollment is now open until May 1st. Secure your slot today!</p>
+            </div>
+            
+            <div class="sidebar-block">
+                <h3>📦 Document Center</h3>
+                <p>Download essential forms for the current school year.</p>
+                <a href="#" class="file-link">📥 Student Handbook 2026 (PDF)</a>
+                <a href="#" class="file-link">📅 Academic Calendar</a>
+                <a href="#" class="file-link">📋 Medical Clearance Form</a>
+                <a href="#" class="file-link">👕 Uniform Sizing Guide</a>
+            </div>
+
+            <div class="sidebar-block info-card">
+                <h3>Campus Hours</h3>
+                <ul class="side-list">
+                    <li><strong>Gate Opens:</strong> 7:00 AM</li>
+                    <li><strong>Kinder Dismissal:</strong> 11:30 AM</li>
+                    <li><strong>JHS Dismissal:</strong> 4:00 PM</li>
+                    <li><strong>Admin Office:</strong> 8:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="resource-main">
+            <section class="content-box">
+                <h2>Enrollment Pathway</h2>
+                <p>Follow these four steps to join the Huckleberry community.</p>
+                <div class="timeline">
+                    <div class="time-item">
+                        <div class="dot"></div>
+                        <strong>Step 1: Inquiry & School Tour</strong>
+                        <p>Contact the registrar to schedule a morning tour of our Montessori facilities.</p>
+                    </div>
+                    <div class="time-item">
+                        <div class="dot"></div>
+                        <strong>Step 2: Diagnostic Assessment</strong>
+                        <p>The student undergoes a readiness evaluation and an interview with the level coordinator.</p>
+                    </div>
+                    <div class="time-item">
+                        <div class="dot"></div>
+                        <strong>Step 3: Document Submission</strong>
+                        <p>Submit PSA Birth Certificate, Form 137, and a Good Moral Certificate from the previous school.</p>
+                    </div>
+                    <div class="time-item">
+                        <div class="dot"></div>
+                        <strong>Step 4: Final Registration</strong>
+                        <p>Settle tuition fees and receive the student ID and uniform claim stubs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-box">
+                <h2>Tuition & Fee Breakdown (SY 2026-2027)</h2>
+                <div class="table-wrapper">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Tuition (Base)</th>
+                                <th>Miscellaneous</th>
+                                <th>Total Annual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kindergarten</td>
+                                <td>₱8,500 / sem</td>
+                                <td>₱2,000</td>
+                                <td>₱19,000</td>
+                            </tr>
+                            <tr>
+                                <td>Elementary (G1-6)</td>
+                                <td>₱9,500 / sem</td>
+                                <td>₱2,500</td>
+                                <td>₱21,500</td>
+                            </tr>
+                            <tr>
+                                <td>Junior High (G7-10)</td>
+                                <td>₱10,500 / sem</td>
+                                <td>₱3,500</td>
+                                <td>₱24,500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">*Miscellaneous fees cover IT lab maintenance, library access, and school insurance.</p>
+            </section>
+
+            <section class="content-box">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <strong>Do you offer sibling discounts?</strong>
+                        <p>Yes, we offer a 10% discount on the tuition of the second child and 15% for the third child.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Is the uniform mandatory?</strong>
+                        <p>Yes, the prescribed uniform must be worn Monday through Thursday. Fridays are "Org Shirt" days.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>What is the teacher-to-student ratio?</strong>
+                        <p>To ensure personalized attention, our Kinder ratio is 15:1 and JHS is 25:1.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Huckleberry Montessori School, Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

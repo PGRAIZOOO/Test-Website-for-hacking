@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enrollment Form - Huckleberry Montessori</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+    </head>
+<body class="store-page">
+    <nav class="top-panel">
+        <div class="btn-row">
+         <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>
+
+    <section class="store-layout">
+        <div class="student-info-row">
+            <div class="input-field">
+                <label>Student's Name:</label>
+                <input type="text" id="studName">
+            </div>
+            <div class="input-field">
+                <label>Grade Level:</label>
+                <input type="text" id="gradeLvl">
+            </div>
+        </div>
+
+        <div class="main-content-box">
+            <div class="items-panel">
+                <h3>SCHOOL ITEMS</h3>
+                <div class="item-list">
+                    <div class="row grid-row">
+                        <span>School Uniform:</span>
+                        <select id="ComboBox1">
+                            <option value="">Size</option>
+                            <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
+                        </select>
+                        <input type="number" id="SCHOOL_UNI_NUMERIC" value="0">
+                    </div>
+                    <div class="row grid-row">
+                        <span>Folder:</span>
+                        <select id="FOLDER_CMBBX">
+                            <option value="">Size</option>
+                            <option>S</option><option>M</option><option>L</option>
+                        </select>
+                        <input type="number" id="FOLDER_NUMERIC" value="0">
+                    </div>
+                    <div class="row grid-row">
+                        <span>Markers:</span>
+                        <select id="MARKER_CMBBX">
+                            <option value="">Type</option>
+                            <option>Marker</option><option>Permanent</option>
+                        </select>
+                        <input type="number" id="MARKER_NUMERIC" value="0">
+                    </div>
+                    <div class="row grid-row">
+                        <span>Ballpen:</span>
+                        <select id="BALLPEN_COLOER_CMBBX">
+                            <option value="">Color</option>
+                            <option>Black</option><option>Blue</option><option>Red</option>
+                        </select>
+                        <input type="number" id="BALLPEN_NUMERIC" value="0">
+                    </div>
+
+                    <div class="row"><label><input type="checkbox" id="SCHOOL_ID_CHKBX"> ID Lace - ₱50</label><input type="number" id="SCHOOL_ID_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="RULER_CHCKBX"> Ruler - ₱25</label><input type="number" id="RULER_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="MONGOL_CHCKBX"> Mongol Pencil - ₱12</label><input type="number" id="MONGOL_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="COLOER_PENCIL_CHCKCBX"> Color Pencils - ₱150</label><input type="number" id="COLOR_PENCIL_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="NOTEBOOK_CHCKBX"> Notebook - ₱70</label><input type="number" id="NOTEBOOK_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="HIGHLIGHTERS_CHCKBX"> Highlighters - ₱25</label><input type="number" id="HIGHLIGHTERS_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="SHARPENER_CHCKBX"> Sharpener - ₱15</label><input type="number" id="SHARPENER_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="SCISSORS_CHCKBX"> Scissors - ₱40</label><input type="number" id="SCISSORS_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="COLOREDPAPER_CHCKBX"> Colored Paper - ₱20</label><input type="number" id="COLOREDPAPER_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="GRAPHING_CHCKBX"> Graphing Paper - ₱20</label><input type="number" id="GRAPHING_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="CARTOLINA_CHCKBX"> Cartolina - ₱35</label><input type="number" id="CARTOLINA_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="MANILA_CHCKBX"> Manila Paper - ₱25</label><input type="number" id="MANILA_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="GLUE_CHCKBX"> Glue - ₱20</label><input type="number" id="GLUE_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="YELLOWPAD_CHCKBX"> Yellow Pad - ₱45</label><input type="number" id="YELLOWPAD_NUMERIC" value="0"></div>
+                    <div class="row"><label><input type="checkbox" id="CORRECTION_CHCKBX"> Correction Tape - ₱15</label><input type="number" id="CORRECTION_NUMERIC" value="0"></div>
+                </div>
+            </div>
+
+            <div class="summary-panel">
+                <h3>SCHOOL SUPPLY SUMMARY</h3>
+                <select id="SCHOOLITEMS_LISTBOXBOX" size="15"></select>
+                
+                <div class="btn-controls">
+                    <button onclick="addToCart()">Add to cart</button>
+                    <button onclick="removeSelected()">Remove</button>
+                    <button onclick="clearCart()">Clear</button>
+                    <button onclick="calculateTotal()">Total</button>
+                    <button onclick="printReceipt()">Print</button>
+                </div>
+
+                <div class="calculation-area">
+                    <p>Total: <span id="TOTAL_LBL_SHOWPRICE">₱ 0.00</span></p>
+                    <p>Cash: <input type="number" id="CASH_TXTBX" value="0"></p>
+                    <p>Change: <span id="Label11">₱ 0.00</span></p>
+                </div>
+            </div>
+        </div>c.
+    </section>
+
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Huckleberry Montessori</h3>
+            <p>Nurturing curiosity and independence through the Montessori method. Empowering students to become lifelong learners.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('programs') }}">Programs</a></li>
+                    <li><a href="{{ url_for('enrollment') }}">Enrollment</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>📍 Taguig City, Philippines</p>
+            <p>📞 (02) 8123-4567</p>
+            <p>📧 info@huckleberry.edu.ph</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Huckleberry Montessori School. All Rights Reserved.</p>
+    </div>
+</footer>
+    <script src="java.js"></script>
+</body>
+</html>

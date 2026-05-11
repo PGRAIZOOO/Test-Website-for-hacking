@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Huckleberry Montessori School</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+</head>
+<body>
+
+    <nav class="top-panel">
+        <div class="btn-row">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>
+
+    <header class="header-abt">
+        <div class="abt-overlay">
+            <h1>Our Legacy of Learning</h1>
+            <p>Dedicated to nurturing the unique potential of every child in Taguig City.</p>
+        </div>
+    </header>
+
+    <section class="about-info">
+        <div class="content-limit">
+            <div class="story-flex">
+                <div class="story-text">
+                    <h1>Our Story</h1>
+                    <p>Founded in 1999, Huckleberry Montessori School began as a small preschool with a single mission: to provide an authentic Montessori experience that respects the individuality of the child. What started as a modest classroom has grown into a premier K-10 institution.</p>
+                    <p>We believe that education is not the filling of a pail, but the lighting of a fire. For over 25 years, we have integrated the traditional Maria Montessori method with modern technological literacy, ensuring our students are prepared for both life and the future digital economy.</p>
+                </div>
+                <div class="story-img">
+                    <img src="static/assets/PROPER_SCHOOL_BG.png" alt="School Founding">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="class-row">
+            <div class="class-col card-alt">
+                <div class="icon-circle">🎯</div>
+                <h2>Our Mission</h2>
+                <p>To provide a carefully prepared environment that fosters self-discipline, curiosity, and a sense of social responsibility. We empower students to master their own learning journey through hands-on discovery.</p>
+            </div>
+
+            <div class="class-col card-alt">
+                <div class="icon-circle">👁️</div>
+                <h2>Our Vision</h2>
+                <p>To be the leading Montessori school in the Philippines, recognized for producing graduates who are not only academically excellent but also empathetic, innovative, and ready to lead in a decentralized world.</p>
+            </div>
+
+            <div class="class-col card-alt">
+                <div class="icon-circle">💎</div>
+                <h2>Our Values</h2>
+                <p><strong>Respect:</strong> For self, others, and the environment.<br>
+                <strong>Integrity:</strong> Honesty in every action.<br>
+                <strong>Independence:</strong> Confidence to think for oneself.<br>
+                <strong>Community:</strong> Strength through collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faculty-section">
+        <div class="section-header">
+            <h2>School Leadership</h2>
+            <p>Our educators are certified Montessori guides and experts in early childhood and secondary education.</p>
+        </div>
+        <div class="faculty-grid">
+            <div class="fac-card">
+                <div class="fac-img"></div>
+                <h3>Maria S. Llegado</h3>
+                <span>School Directress</span>
+                <p>An advocate for student-centered pedagogy with 30 years of experience in educational management.</p>
+            </div>
+            <div class="fac-card">
+                <div class="fac-img"></div>
+                <h3>Charles S. Llegado</h3>
+                <span>IT & Systems Coordinator</span>
+                <p>Leading our digital transformation and integrating blockchain ethics into the JHS curriculum.</p>
+            </div>
+            <div class="fac-card">
+                <div class="fac-img"></div>
+                <h3>Sarah J. Dela Cruz</h3>
+                <span>Primary Level Head</span>
+                <p>Certified Montessori Guide focusing on the "Absorbent Mind" phase of early childhood.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="milestones">
+        <h2 style="text-align:center; margin-bottom: 40px;">School Milestones</h2>
+        <div class="timeline-v">
+            <div class="t-container left">
+                <div class="t-content">
+                    <h3>1999</h3>
+                    <p>HMS founded with 15 students in a small residential space.</p>
+                </div>
+            </div>
+            <div class="t-container right">
+                <div class="t-content">
+                    <h3>2010</h3>
+                    <p>Expansion to Junior High School division and DepEd accreditation.</p>
+                </div>
+            </div>
+            <div class="t-container left">
+                <div class="t-content">
+                    <h3>2026</h3>
+                    <p>Inaugural "Trust Protocol" Seminar and full digital campus integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Huckleberry Montessori</h3>
+                <p>Nurturing curiosity and independence through the Montessori method. Empowering students to become lifelong learners.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('programs') }}">Programs</a></li>
+                    <li><a href="{{ url_for('enrollment') }}">Enrollment</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 Taguig City, Philippines</p>
+                <p>📞 (02) 8123-4567</p>
+                <p>📧 info@huckleberry.edu.ph</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Huckleberry Montessori School. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

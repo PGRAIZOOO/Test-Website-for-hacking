@@ -1,0 +1,166 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enrollment Form - Huckleberry Montessori</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='assets/Logo.jpg') }}" type="image/jpg">
+    </head>
+
+<body>
+    <nav class="top-panel">
+        <div class="btn-row">
+             <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('programs') }}">Programs</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('enrollment') }}">Enrollment</a>
+            <a href="{{ url_for('store') }}">Store</a>
+            <a href="{{ url_for('library') }}">Library</a>
+        </div>
+    </nav>
+
+    <div class="services-header">
+        <h1>Student Services</h1>
+        <p>Comprehensive support systems designed to nurture student growth, safety, and academic success.</p>
+    </div>
+
+    <div class="page-section">
+        <div class="info-block">
+            <h2>Our Holistic Support</h2>
+            <p>At Huckleberry Montessori, we care about more than just grades. Our student services are integrated into the daily life of our learners to ensure they feel safe, healthy, and prepared for the future.</p>
+        </div>
+
+        <h2>Core Student Services</h2>
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="card-image-wrapper">
+                    <img src="static/assets/guidance.jpg" alt="Guidance Counseling">
+                </div>
+                <div class="card-text-content">
+                    <h3>Guidance & Wellness</h3>
+                    <p>Professional guidance to support students' mental health, emotional intelligence, and social development.</p>
+                    <ul class="card-features">
+                        <li>One-on-One Counseling</li>
+                        <li>Social-Emotional Learning (SEL)</li>
+                        <li>Peer Mediation Programs</li>
+                        <li>Behavioral Support Plans</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-card">
+                <div class="card-image-wrapper">
+                    <img src="static/assets/clinic_service.jpg" alt="Medical Services">
+                </div>
+                <div class="card-text-content">
+                    <h3>Health & Clinic Services</h3>
+                    <p>A fully-equipped school clinic with registered medical professionals on standby during school hours.</p>
+                    <ul class="card-features">
+                        <li>Daily Health Screenings</li>
+                        <li>Emergency First Aid Response</li>
+                        <li>Regular Dental & Physical Exams</li>
+                        <li>Health & Nutrition Education</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-card">
+                <div class="card-image-wrapper">
+                    <img src="static/assets/Muliti_media_library.jpg" alt="Library Assistance">
+                </div>
+                <div class="card-text-content">
+                    <h3>Academic Resource Help</h3>
+                    <p>Dedicated staff available to help students navigate research tools and foster a love for reading.</p>
+                    <ul class="card-features">
+                        <li>Research & Citation Support</li>
+                        <li>Digital Resource Navigation</li>
+                        <li>Literacy Tutoring Sessions</li>
+                        <li>Curated Reading Lists</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="card-image-wrapper">
+                    <img src="static/assets/campus_store.png" alt="School Store">
+                </div>
+                <div class="card-text-content">
+                    <h3>Campus Store</h3>
+                    <p>Convenient access to all necessary school supplies, official uniforms, and learning modules.</p>
+                    <ul class="card-features">
+                        <li>Official School Uniforms</li>
+                        <li>Montessori Learning Materials</li>
+                        <li>Basic Stationery & Art Supplies</li>
+                        <li>Huckleberry Merch & Apparel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-card">
+                <div class="card-image-wrapper">
+                    <img src="static/assets/transport.png" alt="Transportation Service">
+                </div>
+                <div class="card-text-content">
+                    <h3>Safe-Track Transport</h3>
+                    <p>Reliable and monitored school transportation services for a stress-free commute for parents and students.</p>
+                    <ul class="card-features">
+                        <li>Door-to-Door Pickup/Drop-off</li>
+                        <li>Real-time GPS Shuttle Tracking</li>
+                        <li>Trained & Background-Checked Drivers</li>
+                        <li>Air-Conditioned Comfort</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-card">
+                <div class="card-image-wrapper">
+                    <img src="static/assets/future_pathway.png" alt="Career Guidance">
+                </div>
+                <div class="card-text-content">
+                    <h3>Future Pathways</h3>
+                    <p>Strategic programs that help older students prepare for the transition to higher education and future careers.</p>
+                    <ul class="card-features">
+                        <li>College Entrance Exam Prep</li>
+                        <li>Career Aptitude Assessments</li>
+                        <li>Internship & Workshop Access</li>
+                        <li>Resume & Interview Coaching</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Huckleberry Montessori</h3>
+                <p>Nurturing curiosity and independence through the Montessori method. Empowering students to become lifelong learners.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('programs') }}">Programs</a></li>
+                    <li><a href="{{ url_for('enrollment') }}">Enrollment</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 Taguig City, Philippines</p>
+                <p>📞 (02) 8123-4567</p>
+                <p>📧 info@huckleberry.edu.ph</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Huckleberry Montessori School. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
